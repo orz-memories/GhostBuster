@@ -32,8 +32,7 @@ echo "Enter the port you want Ghost running at Testing Environment (DO NOT leave
 read testport
 clear
 echo "Creating Your Config File..."
-wget http://wbsandbox.duapp.com/configcreator.php?info=devport=$devport@proport=$proport@testport=$testport@url=$url
-mv configcreator.php?info=devport=$devport@proport=$proport@testport=$testport@url=$url config.js
+wget -O config.js http://wbsandbox.duapp.com/configcreator.php?info=devport=$devport@proport=$proport@testport=$testport@url=$url
 clear
 echo "Finished!"
 echo "You can run 'npm start' in 'ghost' floder to run Ghost after install."
